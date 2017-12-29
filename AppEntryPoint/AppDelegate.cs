@@ -28,7 +28,7 @@ namespace untitled
 			Window.RootViewController = nav;
 			Window.MakeKeyAndVisible();
 
-			AppGlobalSetting.AppApiBaseUrl = "https://hmstest.homeinns.com/";
+			AppGlobalSetting.AppApiBaseUrl = "AppApiBaseUrl";
 
 			return true;
 		}
