@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{408F3017-D4F4-47E1-BEC6-46C902A06A07}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppDelegate.cs">
+    <Files>
+      <File FileName="AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Homeinns.Business PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.19e3f127073340fecb69afd64b81a389981c4b0b" />
+</Properties>

@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{8A1AE3D0-45FA-4C94-A5DF-6A57AC36F934}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Homeinns.Home/HomeViewController.cs">
+    <Files>
+      <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="29" Column="34" />
+      <File FileName="LoginViewController.cs" Line="368" Column="35" />
+      <File FileName="AppViewController.cs" Line="51" Column="5" />
+      <File FileName="AppDelegate.cs" Line="16" Column="8" />
+      <File FileName="AppNavigationController.cs" Line="19" Column="31" />
+      <File FileName="../Homeinns.Home/HomeViewController.cs" Line="24" Column="79" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.untitled PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.19e3f127073340fecb69afd64b81a389981c4b0b" />
+</Properties>

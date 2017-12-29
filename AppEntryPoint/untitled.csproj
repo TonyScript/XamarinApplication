@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{8A1AE3D0-45FA-4C94-A5DF-6A57AC36F934}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>untitled</RootNamespace>
+    <AssemblyName>untitled</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IOSDebuggerPort>53500</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: Home Inns Hotel Management (Shanghai) Co.,Ltd</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>d031b3ee-67e1-4184-8e66-de4e031074eb</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\Library\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Library\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.MT">
+      <HintPath>..\Library\SQLite.MT.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.ios">
+      <HintPath>..\..\Desktop\jiudianguanjia\HMS发布备份\20170323\IosSource发布版本\lib\zxing.ios.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\..\Desktop\jiudianguanjia\HMS发布备份\20170323\IosSource发布版本\lib\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="JPushSDK">
+      <HintPath>..\..\Desktop\jiudianguanjia\HMS发布备份\20170323\IosSource发布版本\lib\JPushSDK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\320-480.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\640-960.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-667h%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-736h%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\Launch.imageset\" />
+    <Folder Include="Assets.xcassets\LaunchImage.launchimage\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="AppViewController.cs" />
+    <Compile Include="AppNavigationController.cs" />
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="Services\MenuService.cs" />
+    <Compile Include="ViewModel\MobileSystemMenuModel.cs" />
+    <Compile Include="ViewModel\UIMenu.cs" />
+    <Compile Include="ViewModel\SystemMenuBadgeModel.cs" />
+    <Compile Include="Services\MenuDataRepository.cs" />
+    <Compile Include="ViewModel\ParentMenuViewModel.cs" />
+    <Compile Include="ViewModel\ChildMenuViewModel.cs" />
+    <Compile Include="ViewModel\SystemMenuSettingViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Homeinns.Home\Homeinns.Home.csproj">
+      <Project>{05E69861-F55F-4CCF-8EB8-D6308E6AE6BA}</Project>
+      <Name>Homeinns.Home</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homeinns.Contacts\Homeinns.Contacts.csproj">
+      <Project>{17FA3B15-8CCF-462F-A8E0-3E7B15F68F89}</Project>
+      <Name>Homeinns.Contacts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homeinns.Business\Homeinns.Business.csproj">
+      <Project>{408F3017-D4F4-47E1-BEC6-46C902A06A07}</Project>
+      <Name>Homeinns.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homeinns.Profile\Homeinns.Profile.csproj">
+      <Project>{26F1B6F0-3470-41A1-A721-4A9BB7F58921}</Project>
+      <Name>Homeinns.Profile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homeinns.Common\Homeinns.Common.csproj">
+      <Project>{338F6EA0-139A-4696-86B4-0AEE541DFA88}</Project>
+      <Name>Homeinns.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\application_normal%402x.png" />
+    <BundleResource Include="Resources\application_selected%402x.png" />
+    <BundleResource Include="Resources\contact_normal%402x.png" />
+    <BundleResource Include="Resources\contact_selected%402x.png" />
+    <BundleResource Include="Resources\message_normal%402x.png" />
+    <BundleResource Include="Resources\message_selected%402x.png" />
+    <BundleResource Include="Resources\setting_normal%402x.png" />
+    <BundleResource Include="Resources\setting_selected%402x.png" />
+    <BundleResource Include="Resources\avatar_notice%402x.png" />
+    <BundleResource Include="Resources\avatar_reminer%402x.png" />
+    <BundleResource Include="Resources\department%402x.png" />
+    <BundleResource Include="Resources\login_password.png" />
+    <BundleResource Include="Resources\login_setting.png" />
+    <BundleResource Include="Resources\login_top.png" />
+    <BundleResource Include="Resources\login_user.png" />
+    <BundleResource Include="Resources\mail%402x.png" />
+    <BundleResource Include="Resources\phone%402x.png" />
+    <BundleResource Include="Resources\setting%402x.png" />
+    <BundleResource Include="Resources\_blank.html" />
+    <BundleResource Include="Resources\ic_checkbox_off%402x.png" />
+    <BundleResource Include="Resources\ic_checkbox_on%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
