@@ -28,6 +28,7 @@ namespace untitled
 		private NSObject obs1, obs2;
 		private nfloat _logoHeight;
 		private UIImage _logo = UIImage.FromFile("login_top.png");
+        private UIWindow _window;
 
 
 		/// <summary>
@@ -359,15 +360,12 @@ namespace untitled
 							String wwwPath = Path.Combine("www");
 							Array wwwFolder = NSFileManager.DefaultManager.GetDirectoryContent(wwwPath, out cachesError);
 							Debug.WriteLine(wwwFolder);
-
-							//_c.NavigationController.PopViewController(false);
-
-							UIWindow Window = new UIWindow(UIScreen.MainScreen.Bounds);
+                            
+							 _c._window = new UIWindow(UIScreen.MainScreen.Bounds);
 							var nav = new AppNavigationController(new AppViewController());
-							Window.RootViewController = nav;
-							Window.MakeKeyAndVisible();
-							//_c.NavigationController.PushViewController(new AppViewController(), true);
-							//UIApplication.SharedApplication.Windows[0].RootViewController = new AppViewController();
+                              AppUIStyleSetting.Initialize(nav);
+							_c._window.RootViewController = nav;
+							_c._window.MakeKeyAndVisible();
 						}
 						_btnLogion.Enabled = true;
 					}

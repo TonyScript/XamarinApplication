@@ -1,13 +1,31 @@
 ﻿<Properties StartupConfiguration="{8A1AE3D0-45FA-4C94-A5DF-6A57AC36F934}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Homeinns.Home/HomeViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Homeinns.Common/Configration/AppUIStyleSetting.cs">
     <Files>
-      <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="29" Column="34" />
-      <File FileName="LoginViewController.cs" Line="368" Column="35" />
+      <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="31" Column="54" />
+      <File FileName="LoginViewController.cs" Line="369" Column="40" />
       <File FileName="AppViewController.cs" Line="51" Column="5" />
-      <File FileName="AppDelegate.cs" Line="16" Column="8" />
-      <File FileName="AppNavigationController.cs" Line="19" Column="31" />
-      <File FileName="../Homeinns.Home/HomeViewController.cs" Line="24" Column="79" />
+      <File FileName="../Homeinns.Home/HomeViewController.cs" Line="91" Column="98" />
+      <File FileName="AppDelegate.cs" Line="9" Column="27" />
+      <File FileName="../Homeinns.Common/Configration/AppUIStyleSetting.cs" Line="56" Column="64" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Homeinns.Application" expanded="True">
+            <Node name="Homeinns.Common" expanded="True">
+              <Node name="Configration" expanded="True">
+                <Node name="AppUIStyleSetting.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Homeinns.Contacts" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Homeinns.Home" expanded="True" />
+            <Node name="untitled" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -15,4 +33,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.untitled PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.19e3f127073340fecb69afd64b81a389981c4b0b" />
+  <MultiItemStartupConfigurations />
 </Properties>

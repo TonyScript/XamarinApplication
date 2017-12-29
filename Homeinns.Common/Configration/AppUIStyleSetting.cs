@@ -53,7 +53,7 @@ namespace Homeinns.Common.Configuration
 
         private static readonly CLLocationManager _locationManager = new CLLocationManager();
 
-        public static void Initialize(UIApplication application, UINavigationController nav)
+        public static void Initialize(UINavigationController nav)
         {
             ScreenWidth = UIScreen.MainScreen.Bounds.Width;
 
@@ -70,7 +70,7 @@ namespace Homeinns.Common.Configuration
             });
            
             nav.NavigationBar.BarStyle = UIBarStyle.Default;
-            application.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, false);
 
 
         }

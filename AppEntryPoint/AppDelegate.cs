@@ -11,22 +11,24 @@ namespace untitled
 	{
 		// class-level declarations
 
-		public override UIWindow Window
-		{
-			get;
-			set;
-		}
+		//public override UIWindow Window
+		//{
+		//	get;
+		//	set;
+		//}
+        private UIWindow _window;
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
+            _window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			// Set RootViewController and init app style
-			Window = new UIWindow(UIScreen.MainScreen.Bounds);
-			var nav = new AppNavigationController(new LoginViewController());
-			//var loginVC = new LoginViewController();
-			AppUIStyleSetting.Initialize(application, nav);
-			Window.RootViewController = nav;
-			Window.MakeKeyAndVisible();
+			//Window = new UIWindow(UIScreen.MainScreen.Bounds);
+			//var nav = new AppNavigationController(new LoginViewController());
+			var loginVC = new LoginViewController();
+			//AppUIStyleSetting.Initialize(application, nav);
+			_window.RootViewController = loginVC;
+			_window.MakeKeyAndVisible();
 
 			AppGlobalSetting.AppApiBaseUrl = "AppApiBaseUrl";
 

@@ -83,9 +83,13 @@ namespace Homeinns.Home
 
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				UIAlertController selectAC = UIAlertController.Create("Row Selected", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
-				selectAC.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-				HomeViewController homeVC = new HomeViewController();
+				//UIAlertController selectAC = UIAlertController.Create("Row Selected", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
+				//selectAC.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+				var homeVC = new HomeViewController();
+                
+                var selectAC = UIAlertController.Create("Row Selected", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
+                selectAC.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+                        
 				homeVC.PresentViewController(selectAC, true, null);
 
 				tableView.DeselectRow(indexPath, true);
