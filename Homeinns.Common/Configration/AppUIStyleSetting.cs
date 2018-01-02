@@ -6,7 +6,7 @@ using CoreLocation;
 namespace Homeinns.Common.Configuration
 {
     /// <summary>
-    ///   Global UI Style Setting
+    ///   App Global UI Style Setting
     /// </summary>
     public static class AppUIStyleSetting
     {

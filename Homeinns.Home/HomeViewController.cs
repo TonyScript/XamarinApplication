@@ -10,6 +10,7 @@ namespace Homeinns.Home
 	public class HomeViewController : UIViewController
 	{
 		UITableView _myTableView;
+        //private readonly HomeViewController _homeVC;
 
 		public override void ViewDidLoad()
 		{
@@ -40,7 +41,6 @@ namespace Homeinns.Home
 			/// <summary>
 			/// 设置section数目
 			/// </summary>
-
 			public override nint NumberOfSections(UITableView tableView)
 			{
 				return TableItems.Length;
@@ -83,15 +83,11 @@ namespace Homeinns.Home
 
 			public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
 			{
-				//UIAlertController selectAC = UIAlertController.Create("Row Selected", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
-				//selectAC.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-				var homeVC = new HomeViewController();
-                
                 var selectAC = UIAlertController.Create("Row Selected", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
                 selectAC.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-                        
-				homeVC.PresentViewController(selectAC, true, null);
-
+                var _homeVC = new HomeViewController();
+			   _homeVC.PresentViewController(selectAC, true, null);
+              
 				tableView.DeselectRow(indexPath, true);
 			}
 

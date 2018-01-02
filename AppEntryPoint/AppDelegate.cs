@@ -10,12 +10,6 @@ namespace untitled
 	public class AppDelegate : UIApplicationDelegate
 	{
 		// class-level declarations
-
-		//public override UIWindow Window
-		//{
-		//	get;
-		//	set;
-		//}
         private UIWindow _window;
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
@@ -23,14 +17,11 @@ namespace untitled
             _window = new UIWindow (UIScreen.MainScreen.Bounds);
 
 			// Set RootViewController and init app style
-			//Window = new UIWindow(UIScreen.MainScreen.Bounds);
-			//var nav = new AppNavigationController(new LoginViewController());
 			var loginVC = new LoginViewController();
-			//AppUIStyleSetting.Initialize(application, nav);
 			_window.RootViewController = loginVC;
 			_window.MakeKeyAndVisible();
 
-			AppGlobalSetting.AppApiBaseUrl = "AppApiBaseUrl";
+			AppGlobalSetting.AppApiBaseUrl = "https://hmstest.homeinns.com/";
 
 			return true;
 		}

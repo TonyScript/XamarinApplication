@@ -76,9 +76,9 @@ namespace Homeinns.Common.Util
 		{
 			var client = GetRestClient();
 			var request = new RestRequest(url, Method.GET);
-			Debug.WriteLine("GET Request: " + url);
+			//Debug.WriteLine("GET Request: " + url);
 			var resp = await client.ExecuteTaskAsync(request);
-			Debug.WriteLine("GET Response: " + resp.Content);
+			//Debug.WriteLine("GET Response: " + resp.Content);
 			CheckIfFailure(resp);
 
 			return Deserialize<T>(resp);

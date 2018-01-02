@@ -1,37 +1,21 @@
 ﻿<Properties StartupConfiguration="{8A1AE3D0-45FA-4C94-A5DF-6A57AC36F934}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Homeinns.Common/Configration/AppUIStyleSetting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Homeinns.Contacts/ViewModel/ContactViewModel.cs">
     <Files>
-      <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="31" Column="54" />
-      <File FileName="LoginViewController.cs" Line="369" Column="40" />
-      <File FileName="AppViewController.cs" Line="51" Column="5" />
-      <File FileName="../Homeinns.Home/HomeViewController.cs" Line="91" Column="98" />
-      <File FileName="AppDelegate.cs" Line="9" Column="27" />
-      <File FileName="../Homeinns.Common/Configration/AppUIStyleSetting.cs" Line="56" Column="64" />
+      <File FileName="LoginViewController.cs" Line="353" Column="31" />
+      <File FileName="AppViewController.cs" Line="44" Column="23" />
+      <File FileName="../Homeinns.Common/RestClient/RestClient.cs" Line="79" Column="28" />
+      <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="172" Column="54" />
+      <File FileName="../Homeinns.Contacts/ViewModel/ContactViewModel.cs" Line="12" Column="15" />
+      <File FileName="../Homeinns.Contacts/Service/ContactsDataRepository.cs" Line="51" Column="31" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Homeinns.Application" expanded="True">
-            <Node name="Homeinns.Common" expanded="True">
-              <Node name="Configration" expanded="True">
-                <Node name="AppUIStyleSetting.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="Homeinns.Contacts" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="Homeinns.Home" expanded="True" />
-            <Node name="untitled" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/xxpang/Projects/Homeinns.Contacts/ViewModel/ContactViewModel.cs" line="126" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.untitled PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.19e3f127073340fecb69afd64b81a389981c4b0b" />
+  <MonoDevelop.Ide.ItemProperties.untitled PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D432B89-DCA9-47F7-9C9B-F862479CB9F2" />
   <MultiItemStartupConfigurations />
 </Properties>
