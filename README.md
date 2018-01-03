@@ -1,2 +1,2 @@
 # XamarinApplication
-用 C# 写的 iOS 应用，基于 Xamarin，持续开发中...
+用 C# 写的 iOS 应用，即 [Xamarin](https://xamarin.com/)
