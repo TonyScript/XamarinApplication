@@ -5,7 +5,7 @@
       <File FileName="AppViewController.cs" Line="44" Column="23" />
       <File FileName="../Homeinns.Common/RestClient/RestClient.cs" Line="79" Column="28" />
       <File FileName="../Homeinns.Contacts/Controllers/ContactViewController.cs" Line="172" Column="54" />
-      <File FileName="../Homeinns.Contacts/ViewModel/ContactViewModel.cs" Line="12" Column="15" />
+      <File FileName="../Homeinns.Contacts/ViewModel/ContactViewModel.cs" Line="10" Column="21" />
       <File FileName="../Homeinns.Contacts/Service/ContactsDataRepository.cs" Line="51" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
